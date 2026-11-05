@@ -1,0 +1,5 @@
+setting_name,setting_value
+business_date,2018-09-01
+return_window_days,14
+policy_version,demo-v1
+source_notice,Historical Olist training data; not live order tracking

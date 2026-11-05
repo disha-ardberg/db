@@ -1,0 +1,1 @@
+support_case_id,tenant_id,authenticated_user_id,order_id,return_request_id,complaint_id,conversation_id,issue_summary,handoff_reason,recorded_order_status,estimated_delivery_date,actual_delivery_date,queue_state,notification_state,created_at

@@ -1,0 +1,1 @@
+request_id,tenant_id,authenticated_user_id,order_id,order_item_id,reason,requested_date,policy_version,decision,refusal_reason,state,idempotency_key,created_at

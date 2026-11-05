@@ -1,0 +1,162 @@
+{
+  "business_date": "2018-09-01",
+  "fixtures": [
+    {
+      "scenario": "user_a_all_orders",
+      "persona": "USER_A",
+      "customer_unique_id": "8d50f5eadf50201ccdcedfb9e2ac8455",
+      "order_ids": [
+        "112eb6f37f1b9dabbced368fbbc6c9ef",
+        "23427a6bd9f8fd1b51f1b1e5cc186ab8",
+        "369634708db140c5d2c4e365882c443a",
+        "4f62d593acae92cea3c5662c76122478",
+        "519203404f6116d406a970763ee75799",
+        "5837a2c844decae8a778657425f6d664",
+        "5d848f3d93a493c1c8955e018240e7ca",
+        "6bdf325f0966e3056651285c0aed5aad",
+        "838f8e96cf584a1d8d22eaf7143c7772",
+        "89d9b111d2b990deb5f5f9769f92800b",
+        "a1a6eadae352582010f449d8527b55f3",
+        "b850a16d8faf65a74c51287ef34379ce",
+        "bf92c69b7cc70f7fc2c37de43e366173",
+        "c2213109a2cc0e75d55585b7aaac6d97",
+        "cd4b336a02aacabd0ef22f6db711f95e",
+        "d3582fd5ccccd9cb229a63dfb417c86f",
+        "e3071b7624445af6e4f3a1b23718667d"
+      ],
+      "expected_order_count": 17
+    },
+    {
+      "scenario": "user_a_return_eligible",
+      "persona": "USER_A",
+      "customer_unique_id": "8d50f5eadf50201ccdcedfb9e2ac8455",
+      "order_id": "a1a6eadae352582010f449d8527b55f3",
+      "order_item_id": "1",
+      "recorded_status": "delivered",
+      "actual_delivery_date": "2018-08-24 17:26:42",
+      "expected_return_eligible": true
+    },
+    {
+      "scenario": "user_b_all_orders",
+      "persona": "USER_B",
+      "customer_unique_id": "dc813062e0fc23409cd255f7f53c7074",
+      "order_ids": [
+        "12acc7b15e7e65ef48a7b01d3f42f1ae",
+        "2e3484a1a6d6411c0a875c5b0f40be6c",
+        "2f7686472526a14dea7833c54aea6a70",
+        "b7633aa5145342cd219d1488b70ef2a6",
+        "bc2c82b0ef78d2252b6176d1972db7c9",
+        "f0031384d36ff045ee1e866942d0fa7a"
+      ],
+      "expected_order_count": 6
+    },
+    {
+      "scenario": "user_b_return_eligible",
+      "persona": "USER_B",
+      "customer_unique_id": "dc813062e0fc23409cd255f7f53c7074",
+      "order_id": "f0031384d36ff045ee1e866942d0fa7a",
+      "order_item_id": "1",
+      "recorded_status": "delivered",
+      "actual_delivery_date": "2018-08-28 17:21:51",
+      "expected_return_eligible": true
+    },
+    {
+      "scenario": "return_day_14",
+      "persona": "RETURN_DAY_14",
+      "customer_unique_id": "1c7255916dd10f4dae06f9f3c307a393",
+      "order_id": "00f1bb0af030935db1745ee28367ea26",
+      "order_item_id": "1",
+      "recorded_status": "delivered",
+      "estimated_delivery_date": "2018-08-27 00:00:00",
+      "actual_delivery_date": "2018-08-18 14:25:48",
+      "expected_late_kind": "delivered_on_time",
+      "expected_late_days": 0,
+      "expected_return_eligible": true,
+      "expected_return_reason": "within_return_window"
+    },
+    {
+      "scenario": "return_day_15",
+      "persona": "RETURN_DAY_15",
+      "customer_unique_id": "f513f0c6703eeca0a7c917c3fb6e407c",
+      "order_id": "00ad1a02d4d9decad15c7e8f8a9470cc",
+      "order_item_id": "1",
+      "recorded_status": "delivered",
+      "estimated_delivery_date": "2018-09-04 00:00:00",
+      "actual_delivery_date": "2018-08-17 22:21:27",
+      "expected_late_kind": "delivered_on_time",
+      "expected_late_days": 0,
+      "expected_return_eligible": false,
+      "expected_return_reason": "outside_return_window"
+    },
+    {
+      "scenario": "open_overdue",
+      "persona": "OPEN_OVERDUE",
+      "customer_unique_id": "205d5aa158338f2b733a07326aae8c87",
+      "order_id": "002f19a65a2ddd70a090297872e6d64e",
+      "order_item_id": "1",
+      "recorded_status": "shipped",
+      "estimated_delivery_date": "2018-04-16 00:00:00",
+      "actual_delivery_date": "",
+      "expected_late_kind": "open_overdue",
+      "expected_late_days": 138,
+      "expected_return_eligible": false,
+      "expected_return_reason": "not_delivered"
+    },
+    {
+      "scenario": "delivered_late",
+      "persona": "DELIVERED_LATE",
+      "customer_unique_id": "3588484a539617d91500764822230fb6",
+      "order_id": "000e906b789b55f64edcb1f84030f90d",
+      "order_item_id": "1",
+      "recorded_status": "delivered",
+      "estimated_delivery_date": "2017-12-07 00:00:00",
+      "actual_delivery_date": "2017-12-09 17:27:23",
+      "expected_late_kind": "delivered_late",
+      "expected_late_days": 2,
+      "expected_return_eligible": false,
+      "expected_return_reason": "outside_return_window"
+    },
+    {
+      "scenario": "delivered_on_time",
+      "persona": "DELIVERED_ON_TIME",
+      "customer_unique_id": "871766c5855e863f6eccc05f988b23cb",
+      "order_id": "00010242fe8c5a6d1ba2dd792cb16214",
+      "order_item_id": "1",
+      "recorded_status": "delivered",
+      "estimated_delivery_date": "2017-09-29 00:00:00",
+      "actual_delivery_date": "2017-09-20 23:43:48",
+      "expected_late_kind": "delivered_on_time",
+      "expected_late_days": 0,
+      "expected_return_eligible": false,
+      "expected_return_reason": "outside_return_window"
+    },
+    {
+      "scenario": "canceled_or_unavailable",
+      "persona": "CANCELED_OR_UNAVAILABLE",
+      "customer_unique_id": "ec979208947bbba310f2ad8e50963725",
+      "order_id": "00310b0c75bb13015ec4d82d341865a4",
+      "order_item_id": "1",
+      "recorded_status": "canceled",
+      "estimated_delivery_date": "2018-08-29 00:00:00",
+      "actual_delivery_date": "",
+      "expected_late_kind": "not_applicable",
+      "expected_late_days": null,
+      "expected_return_eligible": false,
+      "expected_return_reason": "not_delivered"
+    },
+    {
+      "scenario": "missing_delivery_date",
+      "persona": "MISSING_DELIVERY_DATE",
+      "customer_unique_id": "ebf7e0d43a78c81991a4c59c145c75db",
+      "order_id": "0d3268bad9b086af767785e3f0fc0133",
+      "order_item_id": "1",
+      "recorded_status": "delivered",
+      "estimated_delivery_date": "2018-07-24 00:00:00",
+      "actual_delivery_date": "",
+      "expected_late_kind": "missing_delivery_date",
+      "expected_late_days": null,
+      "expected_return_eligible": false,
+      "expected_return_reason": "missing_delivery_date"
+    }
+  ]
+}

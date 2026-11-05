@@ -1,0 +1,7 @@
+output/
+__pycache__/
+*.pyc
+.venv/
+identity.local.csv
+olist_*_dataset.csv
+product_category_name_translation.csv
